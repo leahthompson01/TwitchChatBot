@@ -1,0 +1,22 @@
+{
+  "name": "twitchchatbot",
+  "version": "1.0.0",
+  "description": "Twitch node.js chat bot",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "Twitch",
+    "node.js",
+    "chat",
+    "bot"
+  ],
+  "author": "LeahTCodes",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^16.3.1",
+    "tmi.js": "^1.8.5"
+  }
+}

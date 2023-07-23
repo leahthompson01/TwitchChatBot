@@ -133,6 +133,8 @@ client.on("message", (channel, tags, message, self) => {
     client.say(channel, "Schedule? Haha. Funny");
   } else if (messageLC === "!cheerts") {
     client.say(channel, "gjet in looooser were goin DRINKINGSDLKGSDG");
+  }else if(messageLC === "!travvy"){
+    client.say(channel, "HEY RAVVY: twitch.tv/techsavvytravvy");
   }
 
   //   console.log(message);

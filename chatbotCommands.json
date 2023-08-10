@@ -17,12 +17,16 @@
   "!yag": {
     "username": "theyagich",
     "shoutouts": [
-      "💅gaslight gatekeep girlboss💅: https://www.twitch.tv/theyagich"
+      "💅gaslight gatekeep girlboss💅: https://www.twitch.tv/theyagich",
+      "please send all bones here  https://www.twitch.tv/theyagich"
     ]
   },
   "!travvy": {
     "username": "techsavvytravvy",
-    "shoutouts": ["oh: https://www.twitch.tv/techsavvytravvy"]
+    "shoutouts": [
+      "oh: https://www.twitch.tv/techsavvytravvy",
+      "THE CREATOR of Crablang: https://www.twitch.tv/techsavvytravvy"
+    ]
   },
   "!wheely": {
     "username": "undermywheel",
@@ -47,7 +51,10 @@
   },
   "!ryan": {
     "username": "ryankhawkins",
-    "shoutouts": [" Best mod ever: https://www.twitch.tv/RyanKHawkins"]
+    "shoutouts": [
+      " Best mod ever: https://www.twitch.tv/RyanKHawkins",
+      "Mod with the Dad Bod"
+    ]
   },
   "!100devs": {
     "shoutouts": [
@@ -65,6 +72,10 @@
     "shoutouts": [
       "The certified LeetCode queen: https://www.twitch.tv/madeleinepatience"
     ]
+  },
+  "!aza": {
+    "username": "aza_app",
+    "shoutouts": ["crazy? i was crazy once. https://www.twitch.tv/aza_app"]
   },
   "!girlboss": { "shoutouts": ["💅 YOU 💅 JUST 💅 GOT 💅 GIRLBOSSED 💅"] },
   "!twitter": {
@@ -90,5 +101,61 @@
   },
   "!skeeter": { "shoutouts": ["https://skeeter.wtf"] },
   "!skeetskeet": { "shoutouts": ["https://skeeter.wtf"] },
-  "!skeets": { "shoutouts": ["skeeter.wtf"] }
+  "!skeets": { "shoutouts": ["skeeter.wtf"] },
+  "!test321": { "shoutouts": ["caps", "test2", "321"] },
+  "!teehee": {
+    "shoutouts": [
+      "These two have a secret : https://www.twitch.tv/valkeryias https://www.twitch.tv/theyagich"
+    ]
+  },
+  "!glizzy": {
+    "shoutouts": [
+      "IM STREAMING HERE WITH MY GLIZZY https://clips.twitch.tv/BelovedObeseCucumberFutureMan-dKUQyDU0BIjpxeCI"
+    ]
+  },
+  "!brb": {
+    "shoutouts": [
+      "BRB - Leah's probably doing something she should've done an hour ago. Kappa",
+      "Leah's doing something; She'll be back soon."
+    ]
+  },
+  "!t": {
+    "shoutouts": [
+      "Leah's keyboard doesn'_ like _he le__er '_', so her s_uff migh_ look a li__le weird"
+    ]
+  },
+  "!playlist": {
+    "shoutouts": [
+      "https://open.spotify.com/playlist/3gkvx1cyEXxpyoMXb1tTvi?si=be880c9ea88e4b8a"
+    ]
+  },
+  "!leah": { "username": "leahtcodes", "shoutouts": ["this is leah"] },
+  "!schip": {
+    "username": "schipthatcode",
+    "shoutouts": [
+      "Come here to get your potatoes, and to have your rejection letters rated  https://www.twitch.tv/schipthatcode"
+    ]
+  },
+  "!aria": {
+    "username": "aria_adm",
+    "shoutouts": [
+      "The best godooter teacher and gamer  https://www.twitch.tv/aria_adm"
+    ]
+  },
+  "!hello": { "shoutouts": ["hi"] },
+  "!ping": { "shoutouts": ["pong"] },
+  "!test2222": { "shoutouts": ["this is test"] },
+  "!superlurk": {
+    "shoutouts": [
+      "ENJOY THE SUPERLURK MADIE (if you are not madie this does not apply)"
+    ]
+  },
+  "!refuge": {
+    "shoutouts": [
+      "CURSE OF RA 𓀀 𓀁 𓀂 𓀃 𓀄 𓀅 𓀆 𓀇 Twitch Bot 𓀈 𓀉 𓀊 𓀋 𓀌 𓀍 𓀎 𓀏 𓀐 𓀑 𓀒 𓀓 𓀔 𓀕 𓀖 𓀗 𓀘 𓀙 bad at JavaScript𓀚 𓀛 𓀜 𓀝 𓀞 𓀟 𓀠 𓀡 𓀢 𓀣 𓀤 𓀥 𓀦 𓀧 𓀨 𓀩 𓀪 𓀫 𓀬 𓀭 𓀮 𓀯 Ginger 𓀰 𓀱 𓀲 𓀳 𓀴 𓀵 𓀶 𓀷 𓀸 𓀹 𓀺 𓀻 𓀼 𓀽 𓀾 𓀿 𓁀 𓁁 𓁂 𓁃 𓁄 𓁅 𓁆 𓁇 𓁈 𓁉 𓁊 𓁋 𓁌 𓁍 𓁎 𓁏 𓁐 𓁑 𓀄"
+    ]
+  },
+  "!ssn": { "shoutouts": ["skeeter.wtf"] },
+  "!undefined": { "shoutouts": [null] },
+  "!test122": { "shoutouts": ["this is a test"] }
 }

@@ -23,12 +23,21 @@ const client = new tmi.client({
 });
 
 client.connect().catch(console.error);
+// const map = new Map()
+// map.set('!so', () => {
+//   // do your so logic
+// })
+
 client.on("message", (channel, tags, message, self) => {
   if (self) return;
 
   let messageLC = message.toLowerCase().replace(/\s+/, " ");
   let messageArr = messageLC.trim().split(" ");
   let username = "";
+  // const canHandle = map.has(messageArr[0])
+  // if (canHandle) Map.get
+
+
   if (messageArr.length >= 2 && messageArr[0] === "!so") {
     username = messageArr[1].replace("@", "");
     const keysArr = Object.keys(data);
@@ -60,9 +69,9 @@ client.on("message", (channel, tags, message, self) => {
 
     client.say(channel, shoutoutsArr[randomIndex]);
   }
-  if(messageArr[0] === "!addcommand" && (tags.badges["moderator"] || tags.badges["broadcaster"])){
+  if(messageArr[0] === "!addcommand" && (tags?.badges?.["moderator"] || tags?.badges?.["broadcaster"])){
     const newCommand = {
-      "shoutouts": [messageArr[2]]
+      "shoutouts": [messageArr.slice(2).join(" ")]
 
     }
     data[`!${messageArr[1]}`] = newCommand;

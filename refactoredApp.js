@@ -50,9 +50,19 @@ client.on("message", (channel, tags, message, self) => {
   // if (canHandle) Map.get
 
   if (messageArr.length >= 2 && messageArr[0] === "!so") {
+    // making it work where you can put !so nickname and it will use
+    //custom shoutout for that nickname if exists
     username = messageArr[1].replace("@", "");
+    console.log("username", username);
+    console.log(data[`!${username}`]);
     const keysArr = Object.keys(data);
     let noCustom = true;
+    if (data[`!${username}`] !== undefined) {
+      const shoutoutsArr = data[`!${username}`]["shoutouts"];
+      let randomIndex = Math.floor(shoutoutsArr.length * Math.random());
+      client.say(channel, shoutoutsArr[randomIndex]);
+      noCustom = false;
+    }else{
     for (let i = 0; i < keysArr.length; i++) {
       if (data[keysArr[i]]["username"] === username) {
         const shoutoutsArr = data[keysArr[i]]["shoutouts"];
@@ -61,6 +71,8 @@ client.on("message", (channel, tags, message, self) => {
         noCustom = false;
       }
     }
+  }
+
     if (noCustom) {
       client.say(
         channel,
@@ -83,6 +95,14 @@ client.on("message", (channel, tags, message, self) => {
     client.say(channel, shoutoutsArr[randomIndex]);
   }
   // need to add a check that sees if the shoutout already exists, and if so it adds to the shoutouts
+  if (
+    messageArr[0] === "!addso" &&
+    (tags?.badges?.["moderator"] || tags?.badges?.["broadcaster"])
+  ) {
+      //!addso nickname username all of this is the shoutout
+
+      
+  }
   if (
     messageArr[0] === "!addcommand" &&
     (tags?.badges?.["moderator"] || tags?.badges?.["broadcaster"])

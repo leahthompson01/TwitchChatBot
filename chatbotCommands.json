@@ -157,5 +157,9 @@
   },
   "!ssn": { "shoutouts": ["skeeter.wtf"] },
   "!undefined": { "shoutouts": [null] },
-  "!test122": { "shoutouts": ["this is a test"] }
+  "!test122": { "shoutouts": ["this is a test"] },
+  "!chrissie": {
+    "username": "chrissiecodes", 
+    "shoutouts": ["Bubbles in Chat: https://www.twitch.tv/chrissiecodes"]
+  }
 }

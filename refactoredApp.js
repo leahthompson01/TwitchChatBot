@@ -5,6 +5,7 @@ const fs = require("fs-extra");
 const path = require("path");
 const data = fs.readJsonSync(path.join(__dirname, "chatbotCommands.json"));
 const aliasData = fs.readJsonSync(path.join(__dirname, "aliases.json"));
+const usernameData =  fs.readJsonSync(path.join(__dirname, "nicknames.json"));
 const faveUsers = {
   earend: false,
   valkeryias: false,
@@ -100,19 +101,54 @@ client.on("message", (channel, tags, message, self) => {
     (tags?.badges?.["moderator"] || tags?.badges?.["broadcaster"])
   ) {
       //!addso nickname username all of this is the shoutout
+      //!addso ear earend
+      username  = messageArr[2];
+      const nickname = messageArr[1];
+      if(messageArr.length === 1 && messageArr[0] === "!addso"){
+        client.say(
+          channel,
+          "!addso nickname username the shoutout goes here"
+        );
+      }
+      if(usernameData[username] !== undefined){
+        const shoutoutsArr = data[usernameData[username]]["shoutouts"];
+        shoutoutsArr.push(messageArr.slice(3).join(" "));
+        data[`!${nickname}`]["shoutouts"] = shoutoutsArr;
+        fs.writeFileSync("chatbotCommands.json", JSON.stringify(data, null, 1));
+      }else{
+        usernameData[username] = `!${nickname}`;
+        const newCommand = {
+          username: username,
+          shoutouts: [messageArr.slice(3).join(" ")],
+        };
+        data[ `!${nickname}`] = newCommand;
+        fs.writeFileSync("nicknames.json", JSON.stringify(usernameData, null, 1));
+        fs.writeFileSync("chatbotCommands.json", JSON.stringify(data, null, 1));
+      }
 
-      
+
   }
   if (
     messageArr[0] === "!addcommand" &&
     (tags?.badges?.["moderator"] || tags?.badges?.["broadcaster"])
   ) {
-    const newCommand = {
-      shoutouts: [messageArr.slice(2).join(" ")],
-    };
-    data[`!${messageArr[1]}`] = newCommand;
-    console.log(data);
-    fs.writeFileSync("chatbotCommands.json", JSON.stringify(data, null, 1));
+    const nickname =`!${messageArr[1]}`;
+    // !addcommand nickname this is the shoutout
+    let shoutoutsArr = [];
+    if(data[nickname] !==undefined){
+        shoutoutsArr = data[nickname]["shoutouts"];
+        shoutoutsArr.push(messageArr.slice(2).join(" "));
+        data[nickname]["shoutouts"] = shoutoutsArr;
+    }else{
+      shoutoutsArr.push(messageArr.slice(2).join(" "))
+      const newCommand = {
+        shoutouts: shoutoutsArr,
+      };
+      data[`!${messageArr[1]}`] = newCommand;
+      console.log(data);
+    }
+      fs.writeFileSync("chatbotCommands.json", JSON.stringify(data, null, 1));
+    
   }
 
   // !addAlias shoutout alias
@@ -121,6 +157,4 @@ client.on("message", (channel, tags, message, self) => {
 
   //   console.log(message);
 });
-// tony shoutout WHO IS TONY
-// wheely shoutout
-// !girlboss 💅 YOU 💅 JUST 💅 GOT 💅 GIRLBOSSED 💅
+// add !dadjoke command and just get one from https://icanhazdadjoke.com/

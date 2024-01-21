@@ -19,8 +19,10 @@
  "!yag": {
   "username": "theyagich",
   "shoutouts": [
-   "💅gaslight gatekeep girlboss💅: https://www.twitch.tv/theyagich",
-   "please send all bones here  https://www.twitch.tv/theyagich"
+   "is a bestie",
+   "yag this is the new shoutout",
+   "this is the new shoutout3",
+   "this is an itchy shoutout"
   ]
  },
  "!travvy": {
@@ -31,12 +33,9 @@
   ]
  },
  "!wheely": {
-  "username": "undermywheel",
+  "username": "is",
   "shoutouts": [
-   "Ask wheely how much money he spends on twitch: https://www.twitch.tv/undermywheel ",
-   "SOMEBODY GOME GET HERRRRRRR DUN DUN: https://www.twitch.tv/undermywheel",
-   "WHO IS TONY?!: https://www.twitch.tv/undermywheel",
-   "The proud owner of skeeter.wtf: https://www.twitch.tv/undermywheel"
+   "so hot"
   ]
  },
  "!buh": {
@@ -79,6 +78,12 @@
   "username": "aza_app",
   "shoutouts": [
    "crazy? i was crazy once. https://www.twitch.tv/aza_app"
+  ]
+ },
+ "!dan": {
+  "username": "dancancode",
+  "shoutouts": [
+   "dancancode sometimes streams, but really wants Leah to do unit testing. Follow them at: https://www.twitch.tv/dancancode"
   ]
  },
  "!girlboss": {
@@ -241,6 +246,65 @@
  "!test321444": {
   "shoutouts": [
    "test"
+  ]
+ },
+ "!newcommand": {
+  "shoutouts": [
+   "this is a new command",
+   "this is a new shoutout to the same command"
+  ]
+ },
+ "!nickname": {
+  "username": "username",
+  "shoutouts": [
+   "this is a new shoutout"
+  ]
+ },
+ "!robot": {
+  "shoutouts": [
+   "hihoooo robot"
+  ]
+ },
+ "!raffle": {
+  "shoutouts": [
+   "did someone say waffles?!"
+  ]
+ },
+ "!test12345": {
+  "shoutouts": [
+   "this should be caps because i like my besties"
+  ]
+ },
+ "!test456": {
+  "shoutouts": [
+   "THIS IS A CAPS TES"
+  ]
+ },
+ "!keyboard": {
+  "shoutouts": [
+   "Leah has an iris prebuilt keyboard rev. 8   https://keeb.io/collections/pre-built-keyboards/products/iris-keyboard-pre-built"
+  ]
+ },
+ "!keyboardDetails": {
+  "shoutouts": [
+   "Cherrry PBT keycaps, milky gateron yellow switches, frosted acrylic middle layer, clear acrylic plates, rev 8, usbc white 1m, added rotary encoder to right side"
+  ]
+ },
+ "!keeb": {
+  "shoutouts": [
+   "Cherrry PBT keycaps, milky gateron yellow switches, frosted acrylic middle layer, clear acrylic plates, rev 8, usbc white 1m, added rotary encoder to right side"
+  ]
+ },
+ "!badatmath": {
+  "username": "wheely",
+  "shoutouts": [
+   "is baad at math"
+  ]
+ },
+ "!whoami": {
+  "shoutouts": [
+   "",
+   "awooga"
   ]
  }
 }
